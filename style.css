@@ -1,33 +1,126 @@
+/* roxo 662e91 
+verde 007633
+ cinza d2d2d2 */
+
+
+/* BASE */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html {
+    width: 100%;
+    height: 100%;
+}
+
 body {
     width: 100%;
+    height: 100%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
+    background-color: #d2d2d2;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
 }
 
 header {
-    background-color: mediumseagreen;
+    background-color: #007633;
     height: 15px;
     width: 100%;
 }
 
-label {
-    color: mediumseagreen;
+main {
+    display: flex;
+    width: 100%;
 }
 
-input {
+footer {
+    height: 150px;
+    width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* BASE */
+
+
+/* CONTEÚDO - PRINCIPAL */
+
+.content-title {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.content-text {}
+
+
+/* CONTEÚDO - PRINCIPAL */
+
+.wrapper,
+.brand {
+    width: 50%;
+}
+
+
+/* CONTATO - SOCIAL */
+
+.item-contact-title {
+    text-transform: uppercase;
+}
+
+
+/* CONTATO - SOCIAL */
+
+
+/* FORM */
+
+.form-title {
+    color: #662e91;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.form-label {
+    color: #007633;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.form-group {
+    display: flex;
+}
+
+.form-email {
     height: 40px;
+    width: 100%;
+    border: none;
+    border-radius: 0;
 }
 
-button {
-    background-color: mediumseagreen;
+.form-button {
+    background-color: #007633;
     color: white;
     border: none;
     border-radius: 0;
     height: 40px;
+    text-transform: uppercase;
+    padding: 0 30px;
+    text-align: center;
 }
+
+
+/* FORM */
