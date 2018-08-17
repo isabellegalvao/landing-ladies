@@ -1,6 +1,37 @@
 /* roxo 662e91 
 verde 007633
- cinza d2d2d2 */
+ cinza d2d2d2 
+ gradiente #d4d4d4 to #f1f2f2*/
+
+
+/* FONTS */
+
+@font-face {
+    font-family: 'BEBAS';
+    src: url(fonts/BebasNeueRegular.otf);
+    src: url(fonts/BebasNeueRegular.eot?#iefix) format("embedded-opentype"), url(fonts/BebasNeueRegular.woff) format("woff"), url(fonts/BebasNeueRegular.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BEBAS';
+    src: url(fonts/BebasNeueBold.otf);
+    src: url(fonts/BebasNeueBold.eot?#iefix) format("embedded-opentype"), url(fonts/BebasNeueBold.woff) format("woff"), url(fonts/BebasNeueBold.ttf) format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pragati';
+    src: url(fonts/PragatiNarrow-Regular.otf);
+    src: url(fonts/PragatiNarrow-Regular.eot?#iefix) format("embedded-opentype"), url(fonts/PragatiNarrow-Regular.woff) format("woff"), url(fonts/PragatiNarrow-Regular.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* FONTS */
 
 
 /* BASE */
@@ -19,9 +50,15 @@ html {
 body {
     width: 100%;
     height: 100%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'BEBAS', 'Pragati', Arial, Helvetica, sans-serif;
     font-size: 14px;
     background-color: #d2d2d2;
+    background-color: linear-gradient(to right, #d4d4d4, #f1f2f2);
+    background: -moz-linear-gradient(left, rgba(212, 212, 212, 1) 0%, rgba(241, 242, 242, 1) 100%);
+    background: -webkit-linear-gradient(left, rgba(212, 212, 212, 1) 0%, rgba(241, 242, 242, 1) 100%);
+    background: linear-gradient(to right, rgba(212, 212, 212, 1) 0%, rgba(241, 242, 242, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#d4d4d4', endColorstr='#f1f2f2', GradientType=1);
+    /* IE6-9 */
 }
 
 .container {
