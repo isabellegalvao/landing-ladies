@@ -150,6 +150,10 @@ a {
 
 /* CONTATO - SOCIAL */
 
+.contact-wrapper {
+    margin-top: 15px;
+}
+
 .item-contact-title {
     font-family: 'BEBAS', 'Pragati', Arial, Helvetica, sans-serif;
     text-transform: uppercase;
@@ -189,12 +193,17 @@ a {
 
 /* FORM */
 
+.form-wrapper {
+    margin-top: 20px
+}
+
 .form-title {
     color: #662e91;
     text-transform: uppercase;
     font-weight: bold;
     font-family: 'BEBAS', 'Pragati', Arial, Helvetica, sans-serif;
     font-size: 36px;
+    white-space: nowrap;
 }
 
 .form-label {
@@ -203,6 +212,7 @@ a {
     font-weight: bold;
     font-family: 'BEBAS', 'Pragati', Arial, Helvetica, sans-serif;
     font-size: 31px;
+    white-space: nowrap;
 }
 
 .form-group {
@@ -214,6 +224,7 @@ a {
     width: 72%;
     border: none;
     border-radius: 0;
+    padding: 10px 15px
 }
 
 .form-button {
@@ -225,6 +236,7 @@ a {
     text-transform: uppercase;
     padding: 0 30px;
     text-align: center;
+    cursor: pointer;
 }
 
 
@@ -241,6 +253,15 @@ a {
     -webkit-background-size: contain;
     background-size: contain;
     text-indent: -9999px;
+}
+
+@media screen and (max-width: 1280px) {
+    .form-title {
+        font-size: 32.5px;
+    }
+    .form-label {
+        font-size: 28px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -261,8 +282,24 @@ a {
     }
     .wrapper {
         height: unset;
+        padding: 8% 0;
     }
-    .form-wrapper {
+    .item-contact+.item-contact {
         margin-top: 10px;
+    }
+    .item-contact-title {
+        display: block;
+    }
+    .form-title {
+        font-size: 24px;
+        white-space: inherit;
+    }
+    .form-label {
+        font-size: 21px;
+        white-space: inherit;
+    }
+    .icon-wfta {
+        width: 123px;
+        height: 88px;
     }
 }
